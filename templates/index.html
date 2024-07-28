@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Processing API</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+        .header, .footer {
+            background-color: #555; /* Gray */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 30px auto;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #555; /* Gray */
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .endpoint {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #d32f2f; /* Red */
+            border-radius: 4px;
+            color: white;
+            word-wrap: break-word;
+        }
+        .endpoint code {
+            color: white;
+        }
+        .button {
+            background-color: #d32f2f; /* Red */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #b71c1c; /* Darker red */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CSV Processing API</h1>
+    </div>
+    <div class="container">
+        <h1>Welcome to the CSV Processing API!</h1>
+        <p>Use the following endpoints to interact with the API:</p>
+        <div class="endpoint">
+            <strong>Upload File:</strong><br>
+            <code>POST /upload</code>
+        </div>
+        <div class="endpoint">
+            <strong>Get Result:</strong><br>
+            <code>GET /result/&lt;task_id&gt;</code>
+        </div>
+        <p>Upload a CSV file and get the processed results asynchronously.</p>
+        <a href="https://www.bmat.com/" class="button" target="_blank">Learn More</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 CSV Processing API</p>
+    </div>
+</body>
+</html>
